@@ -1,0 +1,43 @@
+
+.management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.management-content {
+    padding: 0;
+    margin: 0;
+    margin-right: 8.5rem;
+}
+
+.management-content-info {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.management-content-header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2.3rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    font-size: 3.2rem;
+}
+
+.management-content-text {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Img */
+.management-img img {
+    max-width: 54rem;
+    height: 47rem;
+}
