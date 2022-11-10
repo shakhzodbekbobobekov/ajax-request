@@ -7,11 +7,14 @@ const uzs = document.querySelector("#uzs");
 const usd = document.querySelector("#usd");
 
 //event
+
 uzs.addEventListener("input", (e) => {
   const request = new XMLHttpRequest();
 
   request.open("GET", "json/current.json");
+
   request.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+
   request.send();
 
   //   request event
@@ -27,3 +30,15 @@ uzs.addEventListener("input", (e) => {
     }
   });
 });
+
+//! Value	State	Description
+
+// 0	UNSENT	Client has been created. open() not called yet.
+
+// 1	OPENED	open() has been called.
+
+// 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+
+// 3	LOADING	Downloading; responseText holds partial data.
+
+// 4	DONE	The operation is complete.
